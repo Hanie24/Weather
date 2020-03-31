@@ -66,3 +66,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### ARROW FUNCTION
+Son funciones anonimar, no puedes ser relacionadas con métodos y no pueden ser usadas como constructores (prfundizar más)
+
+En las arrow function solo funcionan los parentesis si se resuelve todo en una sola linea en caso contrario usar llaves
+
+### PASAR PARAMETROS A COMPONENTES 
+
+### MÉTODOS THE BIND 
+(Encontrar errores, puntos de interrupción, breakpoints para poder analizar lo que esta pasando)
+
+### Destructuring
+
+Cuando tienes una propiedad con un nombre que quieres asignar a una variable con el mismo nombre que la propiedad la puedes asignar usando esta técnica (objetos complejos y arrays con varios elementos)
+
+### Rest Operator (...)
+
+Se utiliza para extraer los elementos restantes su resultado sera un array con esos elementos
+
+### Templating String
