@@ -68,7 +68,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ### ARROW FUNCTION
-Son funciones anonimar, no puedes ser relacionadas con métodos y no pueden ser usadas como constructores (prfundizar más)
+Son funciones anonimar, no puedes ser relacionadas con métodos y no pueden ser usadas como constructores (profundizar más)
 
 En las arrow function solo funcionan los parentesis si se resuelve todo en una sola linea en caso contrario usar llaves
 
@@ -86,3 +86,16 @@ Cuando tienes una propiedad con un nombre que quieres asignar a una variable con
 Se utiliza para extraer los elementos restantes su resultado sera un array con esos elementos
 
 ### Templating String
+
+### PropTypes
+
+Ayuda a verificar las props de los componentes y en dado caso comunica que estan faltando valores (en la consola), esta verificación se hace durante la ejecución, no en la compilación. 
+
+### Class Component
+
+### Functional Component
+
+### handleUpdateClick
+
+### constructor
+Palabra reservada
