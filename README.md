@@ -44,6 +44,8 @@ Se utiliza para extraer los elementos restantes su resultado sera un array con e
 
 Ayuda a verificar las props de los componentes y en dado caso comunica que estan faltando valores (en la consola), esta verificación se hace durante la ejecución, no en la compilación. 
 
+.shape()
+
 ### Class Component
 
 ### Functional Component
@@ -58,3 +60,39 @@ Es un método que devuelve una PROMISE, devuleve un RESPONSE y este se maneja co
 
 ### Promise
 Es un objeto que es utilizado para peticiones asíncronas y representa un valor que puede estar disponible en el momento, en el futuro o nunca y se puede encontrar en cualquiera de los siguientes estados: Pendiente *pending (estado inicial), Cumplida *fulfill (la operación se completo correctamente), Rechazada *rejected (la operación falló).
+
+### Syntactic Sugar
+
+
+### libreria convert unit
+
+## Patrones de diseño
+
+### Solid
+
+Single Responsability (Unica responsabilidad) que cada componente tenga un solo objetivo asi si en algún momento se quiere cambiar será más fácil.
+
+### Ciclos de vida
+
+Primer ciclo (ciclo de montaje)
+
+constructor: inicializar estado
+componentWillMount: inicialización liviana (su uso esta desaconsejado, profundizar)
+render: lo que mostrara el DOM (concretamente, ¿qué es el DOM?)
+componentDidMount: iniciar peticiones al servidor 
+
+Segundo ciclo (ciclo de actualización)
+
+componentWillUpdate:
+render
+componentDidUpdate: se ejecuta solo si hay actualizaciones, es decir cuando se modifica una propiedad o en el estado.
+
+### Operadores Ternarios
+
+### ESLint
+
+Es una herramienta que de análisis, que identifica patrones problemáticos que encuentra en el código Javascript, también puede ser configurado con reglas personales
+
+
+
+
