@@ -76,16 +76,25 @@ Single Responsability (Unica responsabilidad) que cada componente tenga un solo 
 
 Primer ciclo (ciclo de montaje)
 
-constructor: inicializar estado
-componentWillMount: inicialización liviana (su uso esta desaconsejado, profundizar)
-render: lo que mostrara el DOM (concretamente, ¿qué es el DOM?)
-componentDidMount: iniciar peticiones al servidor 
+constructor: inicializar estado (solo se utiliza cuando hay un estado), sucede antes de que se monte el componente
+render: es el unico método requerido, mostrara el DOM.
+componentDidMount: iniciar peticiones al servidor, retornara datos que queremos mostrar en el component (solo sucede una vez)
 
 Segundo ciclo (ciclo de actualización)
 
-componentWillUpdate:
 render
-componentDidUpdate: se ejecuta solo si hay actualizaciones, es decir cuando se modifica una propiedad o en el estado.
+componentDidUpdate: se ejecuta despues que ocurra una actualización, compara los valores de las propiedades antes y despues de la actualización, así como realizar una petición al servidor con base en esos valores.
+componentWillReceiveProps: se ejecuta cada vez que hay alguna actualización (¿cual es la diferencia con componentDidUpdate) -no aconsejado-
+
+Tercer ciclo (ciclo de desmontale)
+
+Cuando un componente va a ser retidado del DOM 
+
+Cuando el componente deja de ser visible
+
+Ciclo Alternanitivo: Manejo de errores
+
+Solo se ejecutara si hay algún problema en el renderizado de alguno de los ciclos de vida o en el costructor
 
 ### Operadores Ternarios
 
@@ -93,6 +102,41 @@ componentDidUpdate: se ejecuta solo si hay actualizaciones, es decir cuando se m
 
 Es una herramienta que de análisis, que identifica patrones problemáticos que encuentra en el código Javascript, también puede ser configurado con reglas personales
 
+## Comunicacion entre componentes:
+
+### "Burbujeo de acciones"
+
+### URL
+
+### Redux (estado de aplicación)
+
+### Media Queries
+Técnica de CSS3 que mediante la detección de los tamaños de pantalla, determinamos los estilos CSS que vamos a utilizar
+
+#### Viewport
+
+### Flex box
+
+### Filter()
+
+### map()
+
+### One Way Data Flow (flujo de datos de unica dirección)
+Los componentes padre se encargan de pasar las propiedades que despues utilizaran sus hijos (los hijos nunca se comunican con los padres)
+
+### Proceso de Reconciliation
+
+### SPA vs MPA
+
+Single Page Application
 
 
+Multi Page Application (Modelo Vista Controlador)
+Ante la petición de una URL obtenemos una representacion visual del DOM
+
+### REDUX (Estado de la Aplicación)
+Framwork que maneja el estado de la aplicación, Redux se basa en que el estado es único y global en toda la aplicación y hay un único componente llamado store que guarda ese estado, esto nos ayudara a buscar en un solo lugar el estado de los compornentes que se renderizan, lo que hace más fácil acceder al estado.
+El estado se modifica por acciones, las cuales pueden tener asociado un valor en el cual se indica lo que se quiere modificar de ese estado.
+
+### dispatch
 

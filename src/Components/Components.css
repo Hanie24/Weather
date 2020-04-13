@@ -1,0 +1,17 @@
+.location-list{
+    height: calc(100vh - 65px);
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+    .location-list{
+        max-height: 40vh;
+    }
+}
+
+.forcast-title{
+    color: white;
+    text-align: center;
+    padding: 15px 0;  
+}
