@@ -140,3 +140,12 @@ El estado se modifica por acciones, las cuales pueden tener asociado un valor en
 
 ### dispatch
 
+### connect
+Es un función que espera dos funciones como parametro y retorna otra función ue también tiene un parámetro
+
+### Smart Components (Containers)
+Son componentes que tienen acceso al estado de la aplicación (connect)
+
+### Dumb Components (Presentational Components)
+Su objetivo es realizar la renderización
+
