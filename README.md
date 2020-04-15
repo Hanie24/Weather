@@ -149,3 +149,10 @@ Son componentes que tienen acceso al estado de la aplicación (connect)
 ### Dumb Components (Presentational Components)
 Su objetivo es realizar la renderización
 
+### Funciones Puras
+Depende solo de los parámetros que se le asignan, el return solo depende de esos valores, no depende de ningun valor externo (estado, base de datos, etc), no se debe alterar el valor de estos parámetros
+
+### Middlware (redux)
+Funciones que se junta al store y se interpone entre cada una de las acciones.
+
+
