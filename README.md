@@ -155,4 +155,8 @@ Depende solo de los parámetros que se le asignan, el return solo depende de eso
 ### Middlware (redux)
 Funciones que se junta al store y se interpone entre cada una de las acciones.
 
+### Combine Reducers
+Es una función que esta esperando como parámetro, un objeto el cual va a tener los nombres de los reducers en este caso cities y city
+
+
 
